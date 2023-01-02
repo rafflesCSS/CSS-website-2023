@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div id="nav-bar">
+        <ul>
+            <li><a href="./index.html">Our Work</a></li>
+            <li><a onclick="typeWriter()" href="./about.html">About Us</a></li>
+          </ul>
+
+        
+    </div>
+
+    <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
+        <p>Projects</p>
+        <img class="image" id = 0 src="images/proj1.png" draggable="false" onclick="openpopup(this.id)">
+        <img class="image" id = 1 src="images/proj2.png" draggable="false" onclick="openpopup(this.id)">
+
+        <p>Courses</p>
+        <img class="image" id = 2 src="images/datascience.jpg" draggable="false" onclick="openpopup(this.id)">
+        <img class="image" id = 3 src="images/webdev.webp" draggable="false" onclick="openpopup(this.id)">
+        <img class="image" id = 4 src="images/cybersecurity.jpg" draggable="false" onclick="openpopup(this.id)">
+        <img class="image" id = 5 src="images/competitiveprogramming.jpg" draggable="false" onclick="openpopup(this.id)">
+    </div>
+<div id="pop-up" onclick="closepopup()">
+    <div id="text">
+    <h4 id="title">title</h4>
+    <p id="content">hello world</p>
+
+</div>
+<div id="img">
+    <img id="myimg" src="images/proj1.png" draggable="false" width="700px">
+</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

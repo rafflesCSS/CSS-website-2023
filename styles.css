@@ -1,0 +1,125 @@
+body {
+    font-family: Helvetica;
+    color:white;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    margin: 0rem;
+    overflow: hidden;
+
+}
+h4{
+    font-size:30px;
+}
+#text{
+position: absolute;
+top:20%;
+left: 10%;
+color: white;
+width: 30%;
+line-height: 150%;
+}
+
+#about{
+    position: absolute;
+    top:10%;
+    left:5%
+    }
+#pop-up{
+    opacity: 0%;
+    display:none;
+}
+#img{
+    position: absolute;
+    top:20%;
+    right:10%;
+    color: white;
+    }
+
+#nav-bar {
+    position: absolute;
+    left: 40%;
+    top:5%;
+    color: white;
+
+
+}
+#about-content{
+    opacity:0%;
+}
+.section p{
+    margin-right: 15px;
+}
+#pop-up > .image {
+    padding: 100px;
+    /* width: 110vmin; */
+
+}
+#about{
+    width: 50%;
+    line-height: 150%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    display: inline;
+  }
+
+#nav-bar li{
+    padding: 40px;
+}
+a {
+    all: unset;
+}
+#image-track > .image {
+    width: 50vmin;
+    height: 56vmin;
+    object-fit: cover;
+    object-position: 100% 50%;
+}
+#image-track > .image:hover{
+  transform: scale(1.1);
+  transition: 0.6s
+}
+
+
+#image-track {
+    font-family: Courier;
+    color:white;
+    font-size: 20px;
+    display: flex;
+    gap: 4vmin;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(0%, -50%);
+    filter:brightness(100%);
+
+}
+
+  
+  
+  /*the fade animations*/
+  
+  @keyframes fade-out {
+    from {
+      opacity: 100%;
+    }
+    to {
+      opacity: 0%;
+    }
+  }
+  
+  @keyframes fade-in {
+    from {
+      opacity: 0%;
+    }
+    to {
+      opacity: 100%;
+    }
+  }
